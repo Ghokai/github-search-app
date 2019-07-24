@@ -8,6 +8,7 @@ import ErrorMessage from "./ErrorMessage";
 import Loading from "./Loading";
 import RepositoryList from "./RepositoryList";
 import Welcome from "./Welcome";
+import InfoMessage from "./InfoMessage";
 
 const ButtonsPanel = styled.div`
   margin: 10px 0;
@@ -36,6 +37,8 @@ const SearchResult: React.FC = (): React.ReactElement => {
     return <Loading />;
   } else if (hasError) {
     return <ErrorMessage />;
+  } else if (items.length === 0) {
+    return <InfoMessage />;
   }
 
   return (
