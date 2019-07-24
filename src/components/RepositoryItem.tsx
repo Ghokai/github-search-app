@@ -23,6 +23,7 @@ const LinkPart = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  font-size: 20px;
 `;
 
 const StatisticPart = styled.div`
