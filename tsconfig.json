@@ -7,7 +7,7 @@
     "target": "es5",
     "jsx": "react",
     "lib": ["es2015", "es2017", "dom"],
-    "types": ["react"],
+    "types": ["react", "jest"],
     "removeComments": true,
     "allowSyntheticDefaultImports": false,
     "allowJs": true,
@@ -16,5 +16,5 @@
       "components/*": ["src/components/*"]
     }
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "test/setupTests.js"]
 }

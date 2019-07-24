@@ -11,7 +11,7 @@ const Welcome: React.FC = (): React.ReactElement => {
       icon={<Icon type="smile" theme="twoTone" />}
       title="Welcome to Github Repository Search Application!"
       extra={
-        <Button onClick={gotoRepo} type="primary">
+        <Button data-test="github-button" onClick={gotoRepo} type="primary">
           Visit Github Repository
         </Button>
       }
