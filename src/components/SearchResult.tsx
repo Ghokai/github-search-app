@@ -38,7 +38,7 @@ const SearchResult: React.FC = (): React.ReactElement => {
   } else if (hasError) {
     return <ErrorMessage />;
   } else if (items.length === 0) {
-    return <InfoMessage />;
+    return <InfoMessage message="No Repository to Show" />;
   }
 
   return (

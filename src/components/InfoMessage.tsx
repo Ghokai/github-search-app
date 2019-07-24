@@ -1,8 +1,14 @@
 import { Result } from "antd";
 import * as React from "react";
 
-const InfoMessage: React.FC = (): React.ReactElement => {
-  return <Result status="info" title="No Repository to Show" />;
+interface InfoMessageProps {
+  message: string;
+}
+
+const InfoMessage: React.FC<InfoMessageProps> = ({
+  message
+}: InfoMessageProps): React.ReactElement => {
+  return <Result status="info" title={message} />;
 };
 
 export default InfoMessage;
